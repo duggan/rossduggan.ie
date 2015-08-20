@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+	<title>Naming things | Ross Duggan</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<meta name="robots" content="index,follow" />
+
+	<link rel="canonical" href="index.html" />
+
+	<link rel="stylesheet" type="text/css" href="../../../wp-content/themes/thematic/style.css" />
+
+	<link rel="pingback" href="../../../xmlrpc.php" />
+
+
+<!-- All in One SEO Pack 2.2.6.2 by Michael Torbert of Semper Fi Web Design[220,240] -->
+<link rel="author" href="http://duggan/" />
+<meta name="description"  content="I've been trying to articulate something which has been bugging me recently - the way we name software. There's a well known quote attributed to Phil Karlton" />
+
+<link rel="canonical" href="index.html" />
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="Ross Duggan &raquo; Feed" href="../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Ross Duggan &raquo; Comments Feed" href="../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Ross Duggan &raquo; Naming things Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/rossduggan.ie\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.4"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wpt-twitter-feed-css'  href='../../../wp-content/plugins/wp-to-twitter/css/twitter-feed4189.css?ver=4.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-syntax-css-css'  href='../../../wp-content/plugins/wp-syntax/css/wp-syntax5152.css?ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='../../../wp-includes/js/jquery/jquery4a80.js?ver=1.11.2'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/jquery-migrate.min1576.js?ver=1.2.1'></script>
+<script type='text/javascript' src='../../../wp-content/plugins/google-analyticator/external-tracking.minb7f2.js?ver=6.4.8'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Using gems to package polyglot CLI tools' href='../../code/using-gems-to-package-polyglot-cli-tools/index.html' />
+<link rel='next' title='Programming is not my idea of &#8220;fun&#8221;' href='../../code/programming-is-not-my-idea-of-fun/index.html' />
+
+<link rel='shortlink' href='../../../index0904.html?p=11354' />
+<script type="text/javascript" src="../../../wp-content/plugins/audio-player/assets/audio-playerd88c.js?ver=2.0.4.6"></script>
+<script type="text/javascript">AudioPlayer.setup("../../../wp-content/plugins/audio-player/assets/playerd88c.swf?ver=2.0.4.6", {width:"290",animation:"yes",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"E5E5E5",text:"333333",leftbg:"CCCCCC",lefticon:"333333",volslider:"666666",voltrack:"FFFFFF",rightbg:"B4B4B4",rightbghover:"999999",righticon:"333333",righticonhover:"FFFFFF",track:"FFFFFF",loader:"009900",border:"CCCCCC",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+
+	<script type="text/javascript" src="../../../wp-content/themes/thematic/library/scripts/hoverIntent.js"></script>
+	<script type="text/javascript" src="../../../wp-content/themes/thematic/library/scripts/superfish.js"></script>
+	<script type="text/javascript" src="../../../wp-content/themes/thematic/library/scripts/supersubs.js"></script>
+	<script type="text/javascript" src="../../../wp-content/themes/thematic/library/scripts/thematic-dropdowns.js"></script>
+
+	<script type="text/javascript">
+		/*<![CDATA[*/
+		jQuery.noConflict();
+		/*]]>*/
+	</script>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<!-- Google Analytics Tracking by Google Analyticator 6.4.8: http://www.videousermanuals.com/google-analyticator/ -->
+<script type="text/javascript">
+    var analyticsFileTypes = [''];
+    var analyticsSnippet = 'enabled';
+    var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+  
+	_gaq.push(['_setAccount', 'UA-3029758-5']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+</head>
+
+<body class="single single-post postid-11354 single-format-standard windows unknown-browser">
+
+<div id="wrapper" class="hfeed">   
+
+    <div id="header">
+    
+        <div id="branding">
+	    		
+	    		<div id="blog-title"><span><a href="../../../index.html" title="Ross Duggan" rel="home">Ross Duggan</a></span></div>
+	    		
+	    		<div id="blog-description">Move slow and fix things.</div>
+
+		</div><!--  #branding -->
+	    
+	    <div id="access">
+	    		
+	    	<div class="skip-link"><a href="#content" title="Skip navigation to the content">Skip to content</a></div><!-- .skip-link -->
+	    		
+	    	<div class="menu"></div>
+	        
+		</div><!-- #access -->
+		
+		
+	</div><!-- #header-->
+       
+    <div id="main">
+    
+		<div id="container">
+			
+						
+			<div id="content">
+		
+    	        
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="../../code/using-gems-to-package-polyglot-cli-tools/index.html" rel="prev"><span class="meta-nav">&laquo;</span> Using gems to package polyglot CLI tools</a></div>
+					<div class="nav-next"><a href="../../code/programming-is-not-my-idea-of-fun/index.html" rel="next">Programming is not my idea of &#8220;fun&#8221; <span class="meta-nav">&raquo;</span></a></div>
+				</div>
+
+			
+				<div id="post-11354" class="post-11354 post type-post status-publish format-standard hentry category-programming"><h1 class="entry-title">Naming things</h1>
+<div class="entry-meta"><span class="meta-prep meta-prep-author">By </span><span class="author vcard"><a class="url fn n" href="../../author/duggan/index.html" title="View all posts by Ross">Ross</a></span><span class="meta-sep meta-sep-entry-date"> | </span><span class="meta-prep meta-prep-entry-date">Published: </span><span class="entry-date"><abbr class="published" title="2013-01-14T11:45:29+0100">January 14, 2013</abbr></span></div><!-- .entry-meta -->
+					<div class="entry-content">
+<p>I&#8217;ve been trying to articulate something which has been bugging me recently &#8211; the way we name software.</p>
+<p>There&#8217;s a well known quote <a href="http://martinfowler.com/bliki/TwoHardThings.html">attributed to Phil Karlton</a> on the subject:</p>
+<blockquote><p>&#8220;There are only two hard things in Computer Science: cache invalidation and naming things.&#8221;</p></blockquote>
+<p>Naming is hard, but there are some traditions and patterns we can use to avoid bad practice and confusion.</p>
+<p>First, I&#8217;d like to draw a distinction between naming software and the already well established practice of using stylistic conventions in code. What I&#8217;m talking about is more akin to what title you&#8217;d give a book than how you&#8217;d structure the text inside.</p>
+<h3>Some observations</h3>
+<p>Naming software is, of course, a subset of general <a href="http://en.wikipedia.org/wiki/Nomenclature">nomenclature</a>, quite a complicated (and subjective) field. I think, though, that we can narrow down how we currently name software to a few general models: <em>abbreviation</em>, <em>acronym</em>, <em>noun</em>, <em>proper name</em> and <em>metaphor</em>.</p>
+<p>There are plenty of exceptions to each of these, but I think it&#8217;s a useful way of understanding usage.</p>
+<p><strong>Abbreviation</strong><br />
+Examples: <code>grep</code>, <code>ls</code>, <code>man</code><br />
+Attributes: Tends to be used for single-purpose tools. Name encapsulates utility.</p>
+<p><strong>Acronym</strong><br />
+Examples: <code>JSON</code>, <code>HTTP</code>, <code>TCP/IP</code><br />
+Attributes: Used in protocols, standard libraries and aspirant standard tools. Names are composed of standard technical terminology when unrolled.</p>
+<p><strong>Noun</strong><br />
+Examples: <code>requests</code>, <code>hash</code>, <code>ping</code><br />
+Attributes: Like acronyms, used for standards, canonical resources and aspirants. Name is standard technical terminology.</p>
+<p><strong>Proper name</strong><br />
+Examples: <code>Ubuntu</code>, <code>Skype</code>, <code>git</code><br />
+Attributes: Product name. Can encapsulate a lot of disparate functionality and verbiage. Name doesn&#8217;t directly imply utility. </p>
+<p><em>&#8220;A word that answers the purpose of showing what thing it is that we are talking about but not of telling anything about it.&#8221; (<a href="http://en.wikipedia.org/wiki/Proper_name_(philosophy)">Wikipedia</a>)</em> Ubuntu, for example, is an African word meaning &#8220;humanity to others&#8221; but for all intents and purposes in computing, it refers to the Ubuntu operating system. <a href="http://www.boredpanda.com/name-origins-meanings-of-famous-brands-companies/">Skype</a> is similar. Git is another. They are names which do not convey utility in anything but the most abstract sense.</p>
+<p><strong>Metaphor</strong><br />
+Examples: <code>Homebrew</code>, <code>Parody</code>, <code>Chef</code><br />
+Attributes: Based on abstracted analogous relations. Uses real world objects to imply internal (and sometimes external) relationships. May allow one to infer function based on comprehension of the metaphor.</p>
+<p>Metaphor involves taking the abstract concepts from a piece of software, finding commonalities with otherwise unrelated &#8220;real world&#8221; or pre-existing systems, and using these pre-existing terms as a scaffold for fleshing out the abstract software concepts. This is fundamental to userland software &#8211; the &#8220;desktop&#8221; and associated documents, folders, etc, is probably the best known metaphor in computing.</p>
+<h3>The problem</h3>
+<p><strong>Metaphors bug me</strong>. They bug me because they seem so elegant in their first draft, and that sort of elegance appeals to software developers. They bug me because they can work well to inform proper names, but make &#8220;overmetaphorizing&#8221; easy. They bug me because widely used metaphors like the &#8220;desktop&#8221;, are so ingrained that people tend to forget how <a href="http://mitpress.mit.edu/books/beyond-desktop-metaphor">unintuitive</a> they can be to a newcomer.</p>
+<p>Issues that stem from metaphor:</p>
+<ul>
+<li>When the software needs to be extended, it may stretch or break the metaphor (diluting meaning)</li>
+<li>The metaphor may needlessly restrict the function of the software</li>
+<li>It can be meaningless without context</li>
+</ul>
+<p>What really bugs me though, is that <em>metaphors are a promise often broken</em>.</p>
+<p>There is the inevitable mixing of metaphors as projects mature. The most usable software projects I use don&#8217;t beat about the bush with their naming system. Imagine &#8220;git clone&#8221; was &#8220;git boba&#8221; or something equally absurd, tossing out perfectly understandable terminology for a Star Wars reference.</p>
+<p>Functional inference is the <a href="http://www.urbandictionary.com/define.php?term=chasing+the+dragon">dragon chasing</a> of software metaphor.</p>
+<p>There&#8217;s so much software out there that performs mundane or straight forward tasks but have &#8220;clever&#8221; names for one reason or another (you probably only have to look at the Gemfile of your nearest ruby project to find several examples). Python tends not to be too bad for this, but (I don&#8217;t wish to single this out, it&#8217;s just an example) there are still some silly things you&#8217;ll have to hear, like references to &#8220;the cheese shop&#8221; which is the Python package index. This terminology seems to have fallen out of official usage, but older mentions of the package index by name which might be seen by new users tend to be accompanied with an explanation that it is the package index.</p>
+<p>This sort of stuff is a bit of fun at first, but you can imagine that as these things build up and metaphors fracture, or other metaphors make their way in, one ends up with a tangled web of vocabulary which repeatedly requires explanation. It is needless additional cognitive burden. That&#8217;s what it boils down to &#8211; needless additional cognitive burden in software bugs the hell out of me. It&#8217;s one of many subtle &#8220;learning curve steepeners&#8221; that creep into projects. The individual effect might not be much, but the cumulative effect is frustration.</p>
+<h3>Things to consider when naming</h3>
+<ul>
+<li>If you&#8217;re building a simple tool that performs a specific task, try to use an abbreviation or English word(s).</li>
+<li>If you&#8217;re building a library, especially one which aims to be a standard in its area, use industry terminology to name it.</li>
+<li>Metaphor should be considered carefully before being used.</li>
+</ul>
+<h3>The future of naming</h3>
+<p>While discussing this with Eamon Leonard, he recalled the IUPAC naming scheme for chemicals that we were taught in school. The point of this system was to establish a limited vocabulary that one could use to describe any chemical compound. Biology also has several methods of classification and naming for organisms. While I think the software in its entirety is probably the only analogue to IUPAC naming, I wonder if we might find some inspiration in biology for giving canonical, descriptive names to our software?</p>
+
+											</div><!-- .entry-content -->
+					<div class="entry-utility"><span class="cat-links">This entry was posted in <a href="../../category/programming/index.html" rel="category tag">Programming</a></span>. Bookmark the <a href="index.html" title="Permalink to Naming things">permalink</a>. Both comments and trackbacks are currently closed.</div><!-- .entry-utility -->
+				</div><!-- #post -->
+		
+			<div id="nav-below" class="navigation">
+				<div class="nav-previous"><a href="../../code/using-gems-to-package-polyglot-cli-tools/index.html" rel="prev"><span class="meta-nav">&laquo;</span> Using gems to package polyglot CLI tools</a></div>
+				<div class="nav-next"><a href="../../code/programming-is-not-my-idea-of-fun/index.html" rel="next">Programming is not my idea of &#8220;fun&#8221; <span class="meta-nav">&raquo;</span></a></div>
+			</div>
+
+			<div id="comments">
+
+
+
+
+
+
+				<div id="trackbacks-list" class="comments">
+					<h3><span>One</span> Trackback</h3>
+					
+					<ol>
+    		<li id="comment-8989" class="pingback t c-y2013 c-m01 c-d18 c-h11 alt depth-1">
+    			<div class="comment-author">By <a href='http://www.nathankowald.com/blog/2013/01/vim-delete-lines-that-dont-match-pattern/' rel='external nofollow' class='url'>Vim: delete lines that don&#8217;t match pattern — Nathan&#039;s Blog</a> on January 18, 2013 at 10:47 am</div>
+                <div class="comment-content">
+    			<p>[&#8230;] Naming things | Ross Duggan &ndash; Great article about naming software [&#8230;]</p>
+			</div>
+</li><!-- #comment-## -->
+					</ol>				
+					
+				</div><!-- #trackbacks-list .comments -->			
+
+				
+
+
+
+			</div><!-- #comments -->
+		
+			</div><!-- #content -->
+			
+			 
+			
+		</div><!-- #container -->
+		
+
+<div id="primary" class="aside main-aside">
+	<ul class="xoxo">
+<li id="text-373116971" class="widgetcontainer widget_text"><h3 class="widgettitle">About Me</h3>
+			<div class="textwidget"><script src="http://stackoverflow.com/users/flair/105546.js?theme=clean" type="text/javascript"></script>
+<br />
+Software developer located in Cork, Ireland.
+<br />Works for <a href="https://www.barricade.io/">Barricade</a>. <br />Organizes <a href="http://pubstandards.ie/">Pub Standards.</a> 
+<br />
+Authored <a href="http://www.noflake.org/">The Noflake Manifesto</a>.
+<br />
+<br />
+Email: ross.duggan@acm.org
+<br />
+<br />
+I run <a href="http://wthax.org/">wthax.org</a> and  co-founded Ireland's first anime convention, <a href="http://eirtakon.com/">EirtaKon</a>.
+<br /><br /></div>
+		</li>		<li id="recent-posts-2" class="widgetcontainer widget_recent_entries">		<h3 class="widgettitle">Recent Posts</h3>
+		<ul>
+					<li>
+				<a href="../../misc/in-support-of-the-outrage-machine/index.html">In Support of the Outrage Machine</a>
+						</li>
+					<li>
+				<a href="../../misc/the-web-skills-of-leonardo-da-vinci/index.html">The (Web) Skills of Leonardo da Vinci</a>
+						</li>
+					<li>
+				<a href="../../code/pontoon-a-digital-ocean-cli-and-library-in-python/index.html">Pontoon &#8211; A Digital Ocean CLI (and library) in Python</a>
+						</li>
+					<li>
+				<a href="../pivoting-yourself/index.html">Pivoting yourself</a>
+						</li>
+					<li>
+				<a href="../../code/musical-floppy-drive-maintenance-flop-py/index.html">Musical floppy drive maintenance &#8211; flop.py</a>
+						</li>
+				</ul>
+		</li>
+	</ul>
+</div><!-- #primary .aside -->
+
+<div id="secondary" class="aside main-aside">
+	<ul class="xoxo">
+<li id="recent-comments-2" class="widgetcontainer widget_recent_comments"><h3 class="widgettitle">Recent Comments</h3>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='../../technology/archiveteam-yahoo-messages-shuttering-ec2-spot-instances-megacrawl/index.html' rel='external nofollow' class='url'>ArchiveTeam + Yahoo Messages Shuttering + EC2 Spot Instances = MegaCrawl | Ross Duggan</a></span> on <a href="../../code/archiveteam-yahoo-messages-followup-success/comment-page-1/index.html#comment-12917">ArchiveTeam Yahoo Messages Followup: Success</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://regulargeek.com/2013/05/13/geek-reading-may-13-2013/' rel='external nofollow' class='url'>Geek Reading May 13, 2013 | Regular Geek</a></span> on <a href="../pivoting-yourself/comment-page-1/index.html#comment-11842">Pivoting yourself</a></li><li class="recentcomments"><span class="comment-author-link">Jimmy Tang</span> on <a href="../../code/shell-blindness/comment-page-1/index.html#comment-9718">Shell blindness</a></li><li class="recentcomments"><span class="comment-author-link"><a href='../../code/archiveteam-yahoo-messages-followup-success/index.html' rel='external nofollow' class='url'>ArchiveTeam Yahoo Messages Followup: Success | Ross Duggan</a></span> on <a href="../../technology/archiveteam-yahoo-messages-shuttering-ec2-spot-instances-megacrawl/comment-page-1/index.html#comment-9511">ArchiveTeam + Yahoo Messages Shuttering + EC2 Spot Instances = MegaCrawl</a></li><li class="recentcomments"><span class="comment-author-link">TryingToHelp</span> on <a href="../../technology/archiveteam-yahoo-messages-shuttering-ec2-spot-instances-megacrawl/comment-page-1/index.html#comment-9414">ArchiveTeam + Yahoo Messages Shuttering + EC2 Spot Instances = MegaCrawl</a></li></ul></li><li id="categories-2" class="widgetcontainer widget_categories"><h3 class="widgettitle">Categories</h3>
+		<ul>
+	<li class="cat-item cat-item-11"><a href="../../category/arduino/index.html" >Arduino</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="../../category/boardsie/index.html" >Boards.ie</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../../category/books/index.html" title="Things that are still printed on paper for the moment.">Books</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="../../category/code/index.html" >Code</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../../category/codetry/index.html" title="Code, Poetry, Trying Code, Codetry!">Codetry</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="../../category/events/index.html" title="Stuff that happens out in the Real World.">Events</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="../../category/infrastructure/index.html" >Infrastructure</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../../category/misc/index.html" title="Lazy day at the categorization office.">Miscellaneous</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="../../category/programming/index.html" >Programming</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../../category/technology/index.html" title="General technology topics.">Technology</a>
+</li>
+		</ul>
+</li><li id="linkcat-4" class="widgetcontainer widget_links"><h3 class="widgettitle">Development</h3>
+
+	<ul class='xoxo blogroll'>
+<li><a href="http://aidanwalsh.net/" rel="contact">Aidan Walsh</a></li>
+<li><a href="http://websitedoctor.com/">Alastair McDermott</a></li>
+<li><a href="http://blog.benmcredmond.com/">Ben McRedmond</a></li>
+<li><a href="http://www.bytesurgery.com/">ByteSurgery</a></li>
+<li><a href="http://mcdermottroe.com/blog">Conor McDermottroe</a></li>
+<li><a href="http://contrast.ie/blog">Contrast</a></li>
+<li><a href="http://antidis.com/blog/">Dave Barrett</a></li>
+<li><a href="http://www.apeofsteel.com/">Dave Concannon</a></li>
+<li><a href="http://blog.echolibre.com/">EchoLibre</a></li>
+<li><a href="http://codinghorror.com/">Jeff Atwood</a></li>
+<li><a href="http://johnbreslin.com/blog">John Breslin</a></li>
+<li><a href="http://taint.org/">Justin Mason</a></li>
+<li><a href="http://blog.multiblah.com/">Kevin Cannon</a></li>
+<li><a href="http://stochasticgeometry.ie/">Mark Dennehy</a></li>
+<li><a href="http://mattfinucane.ie/">Matt Finucane</a></li>
+<li><a href="http://www.mneylon.com/blog/">Michele Neylon</a></li>
+<li><a href="http://socialmedia.net/">SocialMedia.net</a></li>
+<li><a href="http://stochasticgeometry.wordpress.com/">Stochastic Geometry</a></li>
+<li><a href="http://www.webstrong.ie/blog/">Webstrong</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-3" class="widgetcontainer widget_links"><h3 class="widgettitle">Recreational</h3>
+
+	<ul class='xoxo blogroll'>
+<li><a href="http://hairyfish.org/">Ben Kenealy</a></li>
+<li><a href="http://blog.boards.ie/">Boards.ie Blog</a></li>
+<li><a href="http://thisiswhatido.org/">Darragh Doyle</a></li>
+<li><a href="http://universitydiary.wordpress.com/">Ferdinand von Prondzynski</a></li>
+<li><a href="http://headrambles.com/">Head Rambles</a></li>
+<li><a href="http://irishsentinel.com/">The Irish Sentinel</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-8" class="widgetcontainer widget_links"><h3 class="widgettitle">Technology</h3>
+
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.yourtechstuff.com/" title="Techwire">Adrian Weckler</a></li>
+<li><a href="http://www.insideview.ie/">Bernie Goldbach</a></li>
+<li><a href="http://mulley.net/">Damien Mulley</a></li>
+<li><a href="http://siliconrepublic.com/">Silicon Republic</a></li>
+
+	</ul>
+</li>
+<li id="text-434215201" class="widgetcontainer widget_text">			<div class="textwidget"></div>
+		</li>
+	</ul>
+</div><!-- #secondary .aside -->
+
+    </div><!-- #main -->
+    
+        
+
+	<div id="footer">
+    
+            
+        <div id="siteinfo">        
+
+    	Powered by <a class="wp-link" href="http://wordpress.org/" title="WordPress" rel="generator">WordPress</a>. Built on the <a class="theme-link" href="http://themeshaper.com/thematic/" title="Thematic Theme Framework" rel="designer">Thematic Theme Framework</a>.    
+		</div><!-- #siteinfo -->
+    
+    	        
+	</div><!-- #footer -->
+	
+    </div><!-- #wrapper .hfeed -->  
+
+<!-- Powered by WPtouch: 3.7.6 --><script type='text/javascript' src='../../../wp-includes/js/comment-reply.min4189.js?ver=4.2.4'></script>
+
+</body>
+
+<!-- Mirrored from rossduggan.ie/blog/programming/naming-things/ by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 20 Aug 2015 21:22:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using apc
+Database Caching 3/9 queries in 0.011 seconds using memcached
+Object Caching 783/802 objects using memcached
+
+ Served from: rossduggan.ie @ 2015-08-20 22:22:21 by W3 Total Cache -->

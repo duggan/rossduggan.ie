@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: ArchiveTeam + Yahoo Messages Shuttering + EC2 Spot Instances = MegaCrawl</title>
+	<atom:link href="http://rossduggan.ie/blog/technology/archiveteam-yahoo-messages-shuttering-ec2-spot-instances-megacrawl/feed/" rel="self" type="application/rss+xml" />
+	<link>http://rossduggan.ie/blog/technology/archiveteam-yahoo-messages-shuttering-ec2-spot-instances-megacrawl/</link>
+	<description>Move slow and fix things.</description>
+	<lastBuildDate>Sun, 26 May 2013 13:37:18 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>By: ArchiveTeam Yahoo Messages Followup: Success &#124; Ross Duggan</title>
+		<link>http://rossduggan.ie/blog/technology/archiveteam-yahoo-messages-shuttering-ec2-spot-instances-megacrawl/comment-page-1/#comment-9511</link>
+		<dc:creator><![CDATA[ArchiveTeam Yahoo Messages Followup: Success &#124; Ross Duggan]]></dc:creator>
+		<pubDate>Thu, 28 Mar 2013 23:33:22 +0000</pubDate>
+		<guid isPermaLink="false">http://rossduggan.ie/?p=11530#comment-9511</guid>
+		<description><![CDATA[[...] response to my post last week was amazing. As I write this, there are nine items left processing out of what ended up being more [...]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] response to my post last week was amazing. As I write this, there are nine items left processing out of what ended up being more [&#8230;]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: TryingToHelp</title>
+		<link>http://rossduggan.ie/blog/technology/archiveteam-yahoo-messages-shuttering-ec2-spot-instances-megacrawl/comment-page-1/#comment-9414</link>
+		<dc:creator><![CDATA[TryingToHelp]]></dc:creator>
+		<pubDate>Sat, 23 Mar 2013 19:21:54 +0000</pubDate>
+		<guid isPermaLink="false">http://rossduggan.ie/?p=11530#comment-9414</guid>
+		<description><![CDATA[Oh yeah, the CloudFormation templates I created use the Amazon Linux AMI for each region, so this way the person who created the other AMIs doesn&#039;t need to worry about maintaining them, or paying for access to them. These are standard across regions, are free, and might work a slight bit better too!]]></description>
+		<content:encoded><![CDATA[<p>Oh yeah, the CloudFormation templates I created use the Amazon Linux AMI for each region, so this way the person who created the other AMIs doesn&#8217;t need to worry about maintaining them, or paying for access to them. These are standard across regions, are free, and might work a slight bit better too!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: TryingToHelp</title>
+		<link>http://rossduggan.ie/blog/technology/archiveteam-yahoo-messages-shuttering-ec2-spot-instances-megacrawl/comment-page-1/#comment-9413</link>
+		<dc:creator><![CDATA[TryingToHelp]]></dc:creator>
+		<pubDate>Sat, 23 Mar 2013 19:20:10 +0000</pubDate>
+		<guid isPermaLink="false">http://rossduggan.ie/?p=11530#comment-9413</guid>
+		<description><![CDATA[I built 2 CloudFormation templates to allow you to easily spin up a ton of these things across multiple availability zones:
+
+With a keypair ( so you can login to the host)
+http://files.wordsaboutbytes.com/yahoo-messages-save.cf.txt
+Without a keypair ( can&#039;t log in locally, but it will run)
+http://files.wordsaboutbytes.com/yahoo-messages-save-nokeypair.cf.txt
+
+1. Open the console 
+2. Go to CloudFormation
+3. Give your stack a name.
+4. Select the file you downloaded from above
+5. Click Next.
+6. Fill in the parameters here ( # of instances, The nick you want to be tracked with at the archive team site, the spot price you are willing to pay, and optionally a keypair if you selected that file).
+7. Check the box at the bottom acknowledging that the template will create IAM resources ( used by the host to bootstrap )
+8. Click Continue.
+9. Tags if you want, or click continue.
+10. Review. Click Continue.
+11. Close.
+
+This will launch however many instances you told it to, as t1.micro&#039;s, as the spot price you set it to. When you want to stop, you just go and delete the stack in this console and everything should go away.]]></description>
+		<content:encoded><![CDATA[<p>I built 2 CloudFormation templates to allow you to easily spin up a ton of these things across multiple availability zones:</p>
+<p>With a keypair ( so you can login to the host)<br />
+<a href="http://files.wordsaboutbytes.com/yahoo-messages-save.cf.txt" rel="nofollow">http://files.wordsaboutbytes.com/yahoo-messages-save.cf.txt</a><br />
+Without a keypair ( can&#8217;t log in locally, but it will run)<br />
+<a href="http://files.wordsaboutbytes.com/yahoo-messages-save-nokeypair.cf.txt" rel="nofollow">http://files.wordsaboutbytes.com/yahoo-messages-save-nokeypair.cf.txt</a></p>
+<p>1. Open the console<br />
+2. Go to CloudFormation<br />
+3. Give your stack a name.<br />
+4. Select the file you downloaded from above<br />
+5. Click Next.<br />
+6. Fill in the parameters here ( # of instances, The nick you want to be tracked with at the archive team site, the spot price you are willing to pay, and optionally a keypair if you selected that file).<br />
+7. Check the box at the bottom acknowledging that the template will create IAM resources ( used by the host to bootstrap )<br />
+8. Click Continue.<br />
+9. Tags if you want, or click continue.<br />
+10. Review. Click Continue.<br />
+11. Close.</p>
+<p>This will launch however many instances you told it to, as t1.micro&#8217;s, as the spot price you set it to. When you want to stop, you just go and delete the stack in this console and everything should go away.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ross</title>
+		<link>http://rossduggan.ie/blog/technology/archiveteam-yahoo-messages-shuttering-ec2-spot-instances-megacrawl/comment-page-1/#comment-9412</link>
+		<dc:creator><![CDATA[Ross]]></dc:creator>
+		<pubDate>Sat, 23 Mar 2013 17:55:40 +0000</pubDate>
+		<guid isPermaLink="false">http://rossduggan.ie/?p=11530#comment-9412</guid>
+		<description><![CDATA[Not 100% sure on the individual cost as I&#039;m only monitoring aggregate bandwidth and not tracking when instances are killed or reappear, but I&#039;m running about 300 right now.
+
+That&#039;s at about $0.003 per hour per instance, and only charged for outgoing bandwidth (about 10 GB for all so far). Ballpark figure is about $23 per day. It&#039;ll fluctuate up occasionally, but I&#039;ve set my payment limit to $0.005, so there&#039;s a roof.]]></description>
+		<content:encoded><![CDATA[<p>Not 100% sure on the individual cost as I&#8217;m only monitoring aggregate bandwidth and not tracking when instances are killed or reappear, but I&#8217;m running about 300 right now.</p>
+<p>That&#8217;s at about $0.003 per hour per instance, and only charged for outgoing bandwidth (about 10 GB for all so far). Ballpark figure is about $23 per day. It&#8217;ll fluctuate up occasionally, but I&#8217;ve set my payment limit to $0.005, so there&#8217;s a roof.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mark</title>
+		<link>http://rossduggan.ie/blog/technology/archiveteam-yahoo-messages-shuttering-ec2-spot-instances-megacrawl/comment-page-1/#comment-9411</link>
+		<dc:creator><![CDATA[Mark]]></dc:creator>
+		<pubDate>Sat, 23 Mar 2013 17:40:00 +0000</pubDate>
+		<guid isPermaLink="false">http://rossduggan.ie/?p=11530#comment-9411</guid>
+		<description><![CDATA[Including the cost of bandwidth downloading from Yahoo and uploading to Archive Team, how much are each of your instances costing you per day?]]></description>
+		<content:encoded><![CDATA[<p>Including the cost of bandwidth downloading from Yahoo and uploading to Archive Team, how much are each of your instances costing you per day?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ross</title>
+		<link>http://rossduggan.ie/blog/technology/archiveteam-yahoo-messages-shuttering-ec2-spot-instances-megacrawl/comment-page-1/#comment-9406</link>
+		<dc:creator><![CDATA[Ross]]></dc:creator>
+		<pubDate>Sat, 23 Mar 2013 15:45:38 +0000</pubDate>
+		<guid isPermaLink="false">http://rossduggan.ie/?p=11530#comment-9406</guid>
+		<description><![CDATA[Could be just a problem using HTTP, I&#039;ve changed the gist to use a git URI instead, try that.]]></description>
+		<content:encoded><![CDATA[<p>Could be just a problem using HTTP, I&#8217;ve changed the gist to use a git URI instead, try that.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: TryingToHelp</title>
+		<link>http://rossduggan.ie/blog/technology/archiveteam-yahoo-messages-shuttering-ec2-spot-instances-megacrawl/comment-page-1/#comment-9405</link>
+		<dc:creator><![CDATA[TryingToHelp]]></dc:creator>
+		<pubDate>Sat, 23 Mar 2013 15:26:54 +0000</pubDate>
+		<guid isPermaLink="false">http://rossduggan.ie/?p=11530#comment-9405</guid>
+		<description><![CDATA[Trying to follow the steps you have listed in the gist there, but this fails:
+
+# git clone https://gist.github.com/5226491.git setup-config &amp;&amp; cd setup-config
+Cloning into setup-config...
+error: The requested URL returned error: 403 Forbidden while accessing https://gist.github.com/5226491.git/info/refs
+
+fatal: HTTP request failed
+
+Thoughts?]]></description>
+		<content:encoded><![CDATA[<p>Trying to follow the steps you have listed in the gist there, but this fails:</p>
+<p># git clone <a href="https://gist.github.com/5226491.git" rel="nofollow">https://gist.github.com/5226491.git</a> setup-config &amp;&amp; cd setup-config<br />
+Cloning into setup-config&#8230;<br />
+error: The requested URL returned error: 403 Forbidden while accessing <a href="https://gist.github.com/5226491.git/info/refs" rel="nofollow">https://gist.github.com/5226491.git/info/refs</a></p>
+<p>fatal: HTTP request failed</p>
+<p>Thoughts?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ross</title>
+		<link>http://rossduggan.ie/blog/technology/archiveteam-yahoo-messages-shuttering-ec2-spot-instances-megacrawl/comment-page-1/#comment-9402</link>
+		<dc:creator><![CDATA[Ross]]></dc:creator>
+		<pubDate>Sat, 23 Mar 2013 14:34:55 +0000</pubDate>
+		<guid isPermaLink="false">http://rossduggan.ie/?p=11530#comment-9402</guid>
+		<description><![CDATA[You&#039;ll be doing about 10x as much good/price, yes!
+
+There&#039;s a practical limit after which you have to contant Amazon to increase. That limit is 100 spot instances (or 20 on-demand), according to AWS repos on Quora.]]></description>
+		<content:encoded><![CDATA[<p>You&#8217;ll be doing about 10x as much good/price, yes!</p>
+<p>There&#8217;s a practical limit after which you have to contant Amazon to increase. That limit is 100 spot instances (or 20 on-demand), according to AWS repos on Quora.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mark</title>
+		<link>http://rossduggan.ie/blog/technology/archiveteam-yahoo-messages-shuttering-ec2-spot-instances-megacrawl/comment-page-1/#comment-9401</link>
+		<dc:creator><![CDATA[Mark]]></dc:creator>
+		<pubDate>Sat, 23 Mar 2013 14:13:46 +0000</pubDate>
+		<guid isPermaLink="false">http://rossduggan.ie/?p=11530#comment-9401</guid>
+		<description><![CDATA[This sounds like a silly question, but what happens if I request 10 instances instead of the default 1? Will I be doing 10x as much good for the project (at 10x the AWS bill)? Assuming I can afford it, is there a practical limit to how many instances I can run?]]></description>
+		<content:encoded><![CDATA[<p>This sounds like a silly question, but what happens if I request 10 instances instead of the default 1? Will I be doing 10x as much good for the project (at 10x the AWS bill)? Assuming I can afford it, is there a practical limit to how many instances I can run?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ross</title>
+		<link>http://rossduggan.ie/blog/technology/archiveteam-yahoo-messages-shuttering-ec2-spot-instances-megacrawl/comment-page-1/#comment-9398</link>
+		<dc:creator><![CDATA[Ross]]></dc:creator>
+		<pubDate>Sat, 23 Mar 2013 13:10:55 +0000</pubDate>
+		<guid isPermaLink="false">http://rossduggan.ie/?p=11530#comment-9398</guid>
+		<description><![CDATA[Scott: it uploads periodically, so only the last batch it was crawling will be lost.
+
+JB: you may need to search under &quot;all AMIs&quot;
+
+AK/Andyfoo: I&#039;ll see what I can come up with.]]></description>
+		<content:encoded><![CDATA[<p>Scott: it uploads periodically, so only the last batch it was crawling will be lost.</p>
+<p>JB: you may need to search under &#8220;all AMIs&#8221;</p>
+<p>AK/Andyfoo: I&#8217;ll see what I can come up with.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using apc
+Database Caching 11/16 queries in 0.245 seconds using memcached
+Object Caching 531/537 objects using memcached
+
+ Served from: rossduggan.ie @ 2015-08-20 22:22:52 by W3 Total Cache -->

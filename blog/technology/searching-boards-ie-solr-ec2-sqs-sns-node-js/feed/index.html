@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Searching Boards.ie &#8211; Solr, EC2, SQS, SNS, Node.js</title>
+	<atom:link href="http://rossduggan.ie/blog/technology/searching-boards-ie-solr-ec2-sqs-sns-node-js/feed/" rel="self" type="application/rss+xml" />
+	<link>http://rossduggan.ie/blog/technology/searching-boards-ie-solr-ec2-sqs-sns-node-js/</link>
+	<description>Move slow and fix things.</description>
+	<lastBuildDate>Sun, 26 May 2013 13:37:18 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>By: Munin plugins for Solr &#124; Ross Duggan</title>
+		<link>http://rossduggan.ie/blog/technology/searching-boards-ie-solr-ec2-sqs-sns-node-js/comment-page-1/#comment-5911</link>
+		<dc:creator><![CDATA[Munin plugins for Solr &#124; Ross Duggan]]></dc:creator>
+		<pubDate>Mon, 18 Jul 2011 21:20:57 +0000</pubDate>
+		<guid isPermaLink="false">http://rossduggan.ie/?p=10404#comment-5911</guid>
+		<description><![CDATA[[...] been mucking around with Python recently and have written a couple of simple Munin plugins for Boards.ie&#8217;s Solr cluster (in the hope of helping to track down some annoying performance [...]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] been mucking around with Python recently and have written a couple of simple Munin plugins for Boards.ie&#8217;s Solr cluster (in the hope of helping to track down some annoying performance [&#8230;]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ross</title>
+		<link>http://rossduggan.ie/blog/technology/searching-boards-ie-solr-ec2-sqs-sns-node-js/comment-page-1/#comment-5687</link>
+		<dc:creator><![CDATA[Ross]]></dc:creator>
+		<pubDate>Fri, 17 Jun 2011 22:03:05 +0000</pubDate>
+		<guid isPermaLink="false">http://rossduggan.ie/?p=10404#comment-5687</guid>
+		<description><![CDATA[Hi Alex, thanks!
+
+You&#039;re right in that it&#039;s tricky to compare the two, but I&#039;ll see if I can dig up some numbers either for the next post or as an update to this one.
+
+The ranking is based on a mixture of post time, how prominent the search terms are (spread out in the body or tightly coupled in the title), number of responses, &quot;thanks&quot; and views. It&#039;s not actually a particularly complicated blend but seems to turn up pretty reliable results. Plans are to tweak it occasionally, attempt to add more information to the scoring, etc.
+
+There&#039;s &lt;a href=&quot;http://wiki.apache.org/solr/SolrRelevancyFAQ&quot; rel=&quot;nofollow&quot;&gt;a pretty comprehensive FAQ on the Solr wiki&lt;/a&gt;; it was close to hieroglyphics the first time I read it but makes a lot more sense now. I&#039;d like to give a quick run through in a future post.]]></description>
+		<content:encoded><![CDATA[<p>Hi Alex, thanks!</p>
+<p>You&#8217;re right in that it&#8217;s tricky to compare the two, but I&#8217;ll see if I can dig up some numbers either for the next post or as an update to this one.</p>
+<p>The ranking is based on a mixture of post time, how prominent the search terms are (spread out in the body or tightly coupled in the title), number of responses, &#8220;thanks&#8221; and views. It&#8217;s not actually a particularly complicated blend but seems to turn up pretty reliable results. Plans are to tweak it occasionally, attempt to add more information to the scoring, etc.</p>
+<p>There&#8217;s <a href="http://wiki.apache.org/solr/SolrRelevancyFAQ" rel="nofollow">a pretty comprehensive FAQ on the Solr wiki</a>; it was close to hieroglyphics the first time I read it but makes a lot more sense now. I&#8217;d like to give a quick run through in a future post.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Alex Staveley</title>
+		<link>http://rossduggan.ie/blog/technology/searching-boards-ie-solr-ec2-sqs-sns-node-js/comment-page-1/#comment-5686</link>
+		<dc:creator><![CDATA[Alex Staveley]]></dc:creator>
+		<pubDate>Fri, 17 Jun 2011 21:50:06 +0000</pubDate>
+		<guid isPermaLink="false">http://rossduggan.ie/?p=10404#comment-5686</guid>
+		<description><![CDATA[A super article.  Well done.  What would be really interesting is to hear some performance metrics.  For example, searching X number of records in MySQL takes this whereas using Solr it takes this.   I appreciate it may not really be apples with apples as I assume both are running on different spec hardware.   Also what would also be really interesting would to be hear some info on the algorithm you&#039;re using to determine what&#039;s the best hit, second best hit, third best hit.  I presume it&#039;s a mixture of time and number of times key phrases match.
+
+Very good stuff though. Well done.]]></description>
+		<content:encoded><![CDATA[<p>A super article.  Well done.  What would be really interesting is to hear some performance metrics.  For example, searching X number of records in MySQL takes this whereas using Solr it takes this.   I appreciate it may not really be apples with apples as I assume both are running on different spec hardware.   Also what would also be really interesting would to be hear some info on the algorithm you&#8217;re using to determine what&#8217;s the best hit, second best hit, third best hit.  I presume it&#8217;s a mixture of time and number of times key phrases match.</p>
+<p>Very good stuff though. Well done.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using apc
+Database Caching 4/9 queries in 0.037 seconds using memcached
+Object Caching 405/411 objects using memcached
+
+ Served from: rossduggan.ie @ 2015-08-20 22:23:23 by W3 Total Cache -->
